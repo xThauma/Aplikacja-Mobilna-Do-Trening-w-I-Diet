@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.LayoutPadding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mealInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="26">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/custom_border"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/calorieTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_left_line"
+            android:gravity="center"
+            android:text="@string/kcals"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proteinTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_left_line"
+            android:gravity="center"
+            android:text="@string/proteins_short"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CarbsTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_left_line"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatsTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_left_line"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mealInfoRV"
+        android:layout_below="@+id/mealInfo1">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

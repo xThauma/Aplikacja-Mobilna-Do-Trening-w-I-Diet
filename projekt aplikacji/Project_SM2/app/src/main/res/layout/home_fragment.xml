@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newFragmentToReplace"
+    style="@style/AppTheme.LayoutPadding">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/titleHomeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:hint="@string/title"
+                android:textColor="@color/title"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+
+            <EditText
+                android:id="@+id/contentHomeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="top|left"
+                android:hint="@string/content"
+                android:inputType="textMultiLine"
+                android:lines="2"
+                android:maxLines="3"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:textColor="@color/Black" />
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/save_post_image_button"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_save" />
+
+
+    <LinearLayout
+        android:id="@+id/home_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/save_post_image_button"
+        android:layout_marginTop="10dp"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/changeDateBTNleftHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_no_right_line"
+            android:text="@string/left" />
+
+        <Button
+            android:id="@+id/changeDateBTNHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="@drawable/custom_border"
+            android:text="@string/dateState" />
+
+        <Button
+            android:id="@+id/changeDateBTNrightHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_no_left_line"
+            android:text="@string/right" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_ll2"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

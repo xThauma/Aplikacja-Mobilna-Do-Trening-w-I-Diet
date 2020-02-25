@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/suplementIV"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:src="@drawable/england_flag" />
+
+    <TextView
+        android:id="@+id/suplementNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/suplementIV"
+        android:text="SuplementName"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/suplementDescTV"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_below="@id/suplementNameTV"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/suplementIV"
+        android:text="SuplementDesc"
+        android:textSize="13sp" />
+
+</RelativeLayout>

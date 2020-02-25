@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.LayoutPadding">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_weight="5"
+                android:text="@string/product_name" />
+
+            <EditText
+                android:id="@+id/nameAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="text"
+                android:textAlignment="textEnd" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/kcals" />
+
+            <EditText
+                android:id="@+id/kcalsAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/carbs_add" />
+
+            <EditText
+                android:id="@+id/carbohydratesAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/sugar" />
+
+            <EditText
+                android:id="@+id/sugarAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/proteins_add" />
+
+            <EditText
+                android:id="@+id/proteinsAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/fiber" />
+
+            <EditText
+                android:id="@+id/fiberAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/fat_add" />
+
+            <EditText
+                android:id="@+id/fatAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/saturated_fat" />
+
+            <EditText
+                android:id="@+id/saturated_fatAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/polyunsaturated_fat" />
+
+            <EditText
+                android:id="@+id/polyunsaturated_fatAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/monounsaturated_fat" />
+
+            <EditText
+                android:id="@+id/monounsaturated_fatAddET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/vitaminA" />
+
+            <EditText
+                android:id="@+id/vitaminAET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/vitaminD" />
+
+            <EditText
+                android:id="@+id/vitaminDET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/vitaminE" />
+
+            <EditText
+                android:id="@+id/vitaminEET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/vitaminK" />
+
+            <EditText
+                android:id="@+id/vitaminKET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/vitaminB6" />
+
+            <EditText
+                android:id="@+id/vitaminB6ET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/calcium" />
+
+            <EditText
+                android:id="@+id/calciumET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/magnesium" />
+
+            <EditText
+                android:id="@+id/magnesiumET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/phosphorus" />
+
+            <EditText
+                android:id="@+id/phosphorusET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/zinc" />
+
+            <EditText
+                android:id="@+id/zincET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/copper" />
+
+            <EditText
+                android:id="@+id/copperET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="@string/chrome" />
+
+            <EditText
+                android:id="@+id/chromeET"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/addProductInAddBTN"
+            style="@style/ButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="@string/add_a_product" />
+
+    </TableLayout>
+</ScrollView>

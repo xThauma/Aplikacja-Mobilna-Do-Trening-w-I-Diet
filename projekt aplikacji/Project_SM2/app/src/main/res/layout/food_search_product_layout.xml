@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.LayoutPadding"
+    tools:context="kamiltm.project_sm.diet.food.SarchProductActivity">
+
+    <LinearLayout
+        android:id="@+id/foodInfo_lll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_layout_size"
+        android:background="@drawable/custom_border"
+        android:weightSum="36">
+
+        <EditText
+            android:id="@+id/searchProductET"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@drawable/custom_border_only_right_line"
+            android:gravity="center"
+            android:hint="@string/product_name"
+            android:textSize="@dimen/text_size_search_product" />
+
+        <Button
+            android:id="@+id/searchProductBTN"
+            style="@style/ButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="@drawable/custom_border_only_right_line"
+            android:text="@string/search" />
+
+        <ImageButton
+            android:id="@+id/barCodeIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:background="@drawable/barcode" />
+
+    </LinearLayout>
+
+    <!--
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/searchAddLL"
+        android:layout_below="@+id/foodInfo_lll"
+        android:weightSum="36"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addOwnProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:textAlignment="center"
+            android:background="@drawable/custom_border_no_top_line"
+            android:text="@string/add_own_product"
+            android:textSize="@dimen/button_text_size" />
+
+
+        <Button
+            android:id="@+id/lastAddedProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="16"
+            android:textAlignment="center"
+            android:background="@drawable/custom_border_no_top_line"
+            android:text="@string/lastAdded"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+
+  -->
+
+    <LinearLayout
+        android:id="@+id/foodMeals_And_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodInfo_lll"
+        android:gravity="center"
+        android:weightSum="26">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@drawable/custom_border_no_top_line"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/calorieTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_top_and_left_line"
+            android:gravity="center"
+            android:text="@string/kcals"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proteinTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_top_and_left_line"
+            android:gravity="center"
+            android:text="@string/proteins_short"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/CarbsTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_top_and_left_line"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatsTooltipTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_no_top_and_left_line"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchProductsRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMeals_And_Search" />
+    <!--
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchProductsRVMeal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/foodMeals_And_Search" />
+
+        -->
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

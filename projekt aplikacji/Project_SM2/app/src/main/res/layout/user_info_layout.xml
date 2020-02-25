@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/user_infoOnTopRL"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/appMainColor"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/user_info_usernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/mainTextColor"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_username"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_infoRV"
+            style="@style/AppTheme.Padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_infoOnTopRL">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/user_infoRV"
+            android:id="@+id/user_infoRlMiddle"
+            android:background="@color/appMainColor"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_info_userMacroTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="5dp"
+                android:paddingStart="30dp"
+                android:textColor="@color/mainTextColor"
+                android:paddingTop="5dp"
+                android:text="Informacje żywieniowe    "
+                android:textSize="@dimen/text_size_info_macros"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!-- android:drawableEnd="@drawable/ic_edit" -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_infoMacrosRV"
+            style="@style/AppTheme.Padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_infoRlMiddle">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

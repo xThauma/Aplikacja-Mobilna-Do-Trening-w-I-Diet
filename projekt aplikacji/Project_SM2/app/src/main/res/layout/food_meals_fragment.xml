@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.Fragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/foodMeals_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_size"
+        android:gravity="center"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/changeDateBTNleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_no_right_line"
+            android:text="@string/left" />
+
+        <Button
+            android:id="@+id/changeDateBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="@drawable/custom_border"
+            android:text="@string/dateState" />
+
+        <Button
+            android:id="@+id/changeDateBTNright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_no_left_line"
+            android:text="@string/right" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:id="@+id/sv1213"
+        android:layout_below="@id/foodMeals_ll1"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rl11"
+        android:layout_below="@id/sv1213"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/foodMealsllmiddle"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_border"
+        android:layout_height="30dp">
+
+        <TextView
+            style="@style/BreakfastLunchDinnerSupper"
+            android:text="@string/breakfast" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodMeals_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMealsllmiddle"
+        android:gravity="center"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_no_top_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/kcals"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/proteins_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/del_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/breakfastRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMeals_ll2" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/foodMealsllmiddleLunch"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_border"
+        android:layout_below="@+id/breakfastRV"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="@string/lunch"
+            style="@style/BreakfastLunchDinnerSupper"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodMeals_llLunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMealsllmiddleLunch"
+        android:gravity="center"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_no_top_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/kcals"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/proteins_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/del_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lunchRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMeals_llLunch" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/foodMealsllmiddle2"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_border"
+        android:layout_below="@+id/lunchRV"
+        android:layout_height="30dp">
+
+        <TextView
+            android:text="@string/dinner"
+            style="@style/BreakfastLunchDinnerSupper" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodMeals_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMealsllmiddle2"
+        android:gravity="center"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_no_top_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/kcals"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/proteins_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/del_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dinnerRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMeals_ll3" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/foodMealsllmiddle3"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_border"
+        android:layout_below="@+id/dinnerRV"
+        android:layout_height="30dp">
+
+        <TextView
+            style="@style/BreakfastLunchDinnerSupper"
+            android:text="@string/supper" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodMeals_ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMealsllmiddle3"
+        android:gravity="center"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_no_top_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/kcals"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/proteins_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/carbs_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/fats_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/del_short"
+            android:background="@drawable/custom_border_no_top_and_left_line" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/supperRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodMeals_ll4" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

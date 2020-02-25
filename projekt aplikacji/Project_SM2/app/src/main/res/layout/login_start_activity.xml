@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme.LayoutPadding"
+    tools:context="kamiltm.project_sm.user.LoginActivity">
+
+    <EditText
+        android:id="@+id/usernameLoginEt"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:hint="@string/username"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/passwordLoginEt"
+        style="@style/ButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/usernameLoginEt"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_lock_black_24dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/loginLinearLang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passwordLoginEt"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/loginBT"
+            style="@style/ButtonTheme"
+            android:layout_width="140dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/login"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/ButtonTheme"
+            android:layout_width="140dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/register"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLinearLang"
+        android:layout_gravity="center"
+        android:gravity="right">
+
+        <ImageButton
+            android:id="@+id/poland_flag_ib"
+            style="@style/ImageButtonStyle"
+            android:background="@null"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:src="@drawable/poland_flag" />
+
+        <ImageButton
+            android:id="@+id/england_flag_ib"
+            style="@style/ImageButtonStyle"
+            android:background="@null"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:src="@drawable/england_flag" />
+
+    </LinearLayout>
+
+</RelativeLayout>

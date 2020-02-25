@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/saveMealItem"
+        android:icon="@drawable/ic_save"
+        android:title="@string/save"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/backToSearchActivityItem"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout"
+        app:showAsAction="always"/>
+
+
+    <group
+        android:id="@+id/grp1">
+        <item
+            android:id="@+id/addProductItem"
+            android:actionLayout="@layout/menu_divider_layout"
+            android:checked="true"
+            android:icon="@drawable/ic_plus"
+            android:title="@string/add_a_product" />
+    </group>
+
+    <group
+        android:id="@+id/grp5">
+        <item
+            android:id="@+id/createMealItem"
+            android:actionLayout="@layout/menu_divider_layout"
+            android:icon="@drawable/ic_history"
+            android:title="@string/createMeal" />
+    </group>
+
+
+    <group
+        android:id="@+id/grp2">
+        <item
+            android:id="@+id/checkLastProductsItem"
+            android:actionLayout="@layout/menu_divider_layout"
+            android:icon="@drawable/ic_history"
+            android:title="@string/lastAdded" />
+    </group>
+
+    <group
+        android:id="@+id/grp3">
+        <item
+            android:id="@+id/favProductsItem"
+            android:actionLayout="@layout/menu_divider_layout"
+            android:icon="@drawable/ic_history"
+            android:title="@string/favourites" />
+    </group>
+
+    <group
+        android:id="@+id/grp4">
+        <item
+            android:id="@+id/addMealItem"
+            android:actionLayout="@layout/menu_divider_layout"
+            android:icon="@drawable/ic_history"
+            android:title="@string/addMeal" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">20dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="row_padding_vertical">10dp</dimen>
+    <dimen name="ib_layout_heigh">30dp</dimen>
+    <dimen name="ib_layout_width">45dp</dimen>
+    <dimen name="ib_layout_margin">10dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="padding">25dp</dimen>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_huge">64dp</dimen>
+    <dimen name="layout_margin_size">10dp</dimen>
+    <dimen name="food_info_margin_bottom">5dp</dimen>
+    <dimen name="user_info_margin_bottom">10dp</dimen>
+    <dimen name="row_margin_top">5dp</dimen>
+    <item name="match_parent" format="integer" type="dimen">-1</item>
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+    <dimen name="wrap">@dimen/wrap_content</dimen>
+    <dimen name="match">@dimen/match_parent</dimen>
+    <dimen name="custom_buttom_round">12dp</dimen>
+
+
+    <!-- home -->
+
+    <dimen name="title_et">100dp</dimen>
+    <dimen name="content_et">200dp</dimen>
+
+    <!-- user info text size -->
+
+    <dimen name="text_size_info_macros">17sp</dimen>
+    <dimen name="text_size_username">21sp</dimen>
+    <dimen name="text_size_user">16sp</dimen>
+    <dimen name="text_size_macros">13sp</dimen>
+
+    <!-- dateState rows -->
+    <dimen name="text_size_row_title">16sp</dimen>
+    <dimen name="text_size_row_date">10sp</dimen>
+    <dimen name="text_size_row_content">16sp</dimen>
+
+    <!-- kcals row -->
+    <dimen name="text_size_kcals_row">15sp</dimen>
+
+    <!-- layout row -->
+    <dimen name="layout_size">30dp</dimen>
+
+    <!-- search layout row -->
+    <dimen name="search_layout_size">40dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="button_text_size">16dp</dimen>
+
+    <!-- Semantic definitions -->
+
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+</resources>

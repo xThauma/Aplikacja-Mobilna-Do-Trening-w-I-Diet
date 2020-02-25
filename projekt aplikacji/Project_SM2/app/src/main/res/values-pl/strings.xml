@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">F\u0026H</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ustawienia</string>
+    <string name="title_activity_login">Zaloguj się</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Hasło (opcjonalne)</string>
+    <string name="action_sign_in">Zaloguj się lub zarejestruj</string>
+    <string name="action_sign_in_short">Zaloguj się</string>
+    <string name="error_invalid_email">Adres Email jest niepoprwany</string>
+    <string name="error_invalid_password">Hasło jest za krótkie</string>
+    <string name="error_incorrect_password">Hasło jest niepoprawne</string>
+    <string name="error_field_required">To pole jest wymagane</string>
+    <string name="permission_rationale">"Do dostarczania wiadomości e-mail są potrzebne uprawnienia do kontaktów. </string>
+    <string name="username">Nazwa użytkownika</string>
+    <string name="password">Hasło</string>
+    <string name="login">Zaloguj</string>
+    <string name="forgot_password">Nie pamiętasz hasła?</string>
+    <string name="register">Rejestracja</string>
+    <string name="next">Dalej</string>
+    <string name="skip">Cofnij</string>
+    <string name="start">Zakończ</string>
+    <string name="user_registered">Zarejestrowano pomyślnie</string>
+    <string name="no_internet">Podany użytkownik już istnieje</string>
+    <string name="weight_failed">Pole z informacją o wadze nie może być puste</string>
+    <string name="male">Mężczyna</string>
+    <string name="female">Kobieta</string>
+    <string name="height_failed">Pole z informacją o wzroście nie może być puste</string>
+    <string name="mail_failed">Mail nie jest poprawny</string>
+    <string name="password_failed">Pole z hasłem nie może być puste</string>
+    <string name="username_failed">Pole z nazwa użytkownika nie może być puste</string>
+    <string name="bottom_password_failed">Hasła nie są takie same</string>
+    <string name="logout">Wyloguj</string>
+    <string name="diary">Dziennik</string>
+    <string name="home">Strona Startowa</string>
+    <string name="content">Treść</string>
+    <string name="title">Tytuł</string>
+    <string name="diet">Dieta</string>
+    <string name="breakfast">Śniadanie</string>
+    <string name="dinner">Obiad</string>
+    <string name="supper">Kolacja</string>
+    <string name="fats">tłuszcze</string>
+    <string name="carbohydrates">węglowodany</string>
+    <string name="proteins">białko </string>
+    <string name="kcals">Kcal </string>
+    <string name="add_a_product">Stwórz produkt</string>
+    <string name="left"><![CDATA[<]]></string>
+    <string name="right"><![CDATA[>]]></string>
+    <string name="dateState">Data</string>
+    <string name="search">Szukaj</string>
+    <string name="product_name">Nazwa produktu</string>
+    <string name="grams">g</string>
+    <string name="emptySearchEditText">To pole nie może byc puste!</string>
+    <string name="add_own_product">Dodaj własny produkt</string>
+    <string name="fiber">Błonnik</string>
+    <string name="carbs_add">Węglowodany</string>
+    <string name="fat_add">Tłuszcze</string>
+    <string name="saturated_fat">Nasycone</string>
+    <string name="polyunsaturated_fat">wielonienasycone</string>
+    <string name="monounsaturated_fat">Jednonienasycone</string>
+    <string name="sugar">Cukry</string>
+    <string name="badFormat">Zły format, użyj na przykład: 12.5</string>
+    <string name="go_back_to_diet_window">Wróc do strony z dietą</string>
+    <string name="proteins_add">Białko</string>
+    <string name="go_back">Wróc</string>
+    <string name="added">Dodane</string>
+    <string name="delete_question">Na pewno usunąć?</string>
+    <string name="cancel">Anuluj</string>
+    <string name="add_question">Na pewno dodać?</string>
+    <string name="please_wait">Prosze czekać ...</string>
+    <string name="are_you_sure_you_want_to_add_a_product_with_name">Czy napewno chcesz dodać produkt o nazwie:</string>
+    <string name="continuation_of_add_product_adb">Czy napewno chcesz dodać produkt o nazwie:</string>
+    <string name="continuation_of_add_product_adbb">\? Jeśli tak to podaj ilośc porcji(1 porcja = 100g). Na przykład 1.5 porcji to będzie 150 gram.</string>
+    <string name="product_with_name">Produkt o nazwie"</string>
+    <string name="has_been_added_to_the_database">\"Został dodany.</string>
+    <string name="are_you_sure_to_delate">Czy napewno chcesz usunąć produkt o nazwie:</string>
+    <string name="registering_user">Rejestrowanie użytkownika...</string>
+    <string name="username2">Nazwa Użytkownika:</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="sex">Płeć</string>
+    <string name="weight">Waga</string>
+    <string name="height">Wzrost</string>
+    <string name="weight_lose_per_week">Utrata wagi na tydzień</string>
+    <string name="target_weight">Waga docelowa</string>
+    <string name="informations">Informacje</string>
+    <string name="daily_calories">Dzienne kalorie:</string>
+    <string name="training">Trening</string>
+    <string name="stopwatch">Stoper</string>
+    <string name="number_of_reps">, ilośc powtórzen:</string>
+    <string name="number_of_series">Liczba serii:</string>
+    <string name="delete_training_with_name">Czy napewno chcesz usunąć trening o nazwie:</string>
+    <string name="delete_post_with_name">Czy napewno chcesz usunąć wiadomość o tytule:</string>
+    <string name="add_a_training">Dodaj ćwiczenie</string>
+    <string name="exercise_name">Nazwa cwiczenia:</string>
+    <string name="number_of_reps2">Liczba powtórzen:</string>
+    <string name="number_of_series2">Liczba serii:</string>
+    <string name="exercise_with_name">Ćwiczenie o nazwie:</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="save_lap">Zapisz</string>
+    <string name="start2">Start</string>
+    <string name="pause2">Pauza</string>
+    <string name="reset2">Reset</string>
+    <string name="gyms">Siłownie</string>
+    <string name="showing_nearby_gyms">Pokazywanie pobliskich siłowni</string>
+    <string name="name">Nazwa</string>
+    <string name="title_activity_maps2">Mapa</string>
+    <string name="intro_message">Witaj</string>
+    <string name="open_activity">Szukaj</string>
+    <string name="selected_place">Ostatnio wybrane miejsce:</string>
+    <string name="place_details">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        Adres: %2$s
+        <br/>
+        Telefon: %3$s
+        <br/>
+        Strona: %4$s
+    ]]>
+    </string>
+    <string name="place_details_no_website">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        Adres: %2$s
+        <br/>
+        Telefon: %3$s
+    ]]>
+    </string>
+    <string name="place_details_no_website_no_phone">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        Adres: %2$s
+    ]]>
+    </string>
+    <string name="place_details_no_phone">
+    <![CDATA[
+        <b>%1$s</b>
+        <br/>
+        Adres: %2$s
+        <br/>
+        Strona: %3$s
+    ]]>
+    </string>
+    <string name="add_gym">Dodaj siłownie</string>
+    <string name="not_avaiable">Usługi Google Play są niedostępne:</string>
+    <string name="not_found">Produkt nie został znaleziony. Czy chcesz teraz go dodać?</string>
+    <string name="add_a_gym_place">Dodaj położenie siłowni</string>
+    <string name="steps_counter">Licznik kroków</string>
+    <string name="add_product_to_the_database">Czy chcesz dodać nowy produkt? Jeśli tak to podaj ilośc porcji(1 porcja = 100g). Na przykład 1.5 porcji to będzie 150 gram.</string>
+    <string name="steps_counter_not_avaiable">Licznik kroków nie jest dostępny na Twoim urządzeniu!</string>
+    <string name="steps">Kroki:</string>
+    <string name="portion">Porcja:</string>
+    <string name="total_proteins">Całkowita ilość białka:</string>
+    <string name="total_carbs">, węglowodanów:</string>
+    <string name="total_fats">, tłuszczy:</string>
+    <string name="exit">Zamknij</string>
+    <string name="value">Wartość</string>
+    <string name="proteins_short">B</string>
+    <string name="carbs_short">W</string>
+    <string name="fats_short">T</string>
+    <string name="add_new_product">Dodaj nowy produkt</string>
+    <string name="witamins">Witaminy</string>
+    <string name="minerals">Minerały</string>
+    <string name="vitaminA">Witamina A</string>
+    <string name="vitaminD">Witamina D</string>
+    <string name="vitaminE">Witamina E</string>
+    <string name="vitaminK">Witamina K</string>
+    <string name="vitaminB6">Witamina B6</string>
+    <string name="calcium">Wapń</string>
+    <string name="iron">Źelazo</string>
+    <string name="magnesium">Magnez</string>
+    <string name="phosphorus">Fosfor</string>
+    <string name="zinc">Cynk</string>
+    <string name="copper">Miedź</string>
+    <string name="chrome">Chrom</string>
+    <string name="del_short">Usuń</string>
+    <string name="repeat_password">Powtórz hasło</string>
+    <string name="suplements">Suplementy</string>
+    <string name="settings">Ustawienia</string>
+    <string name="add_vitamins">Dodaj vitaminy</string>
+    <string name="nazwa_wiczenia">Nazwa ćwiczenia</string>
+    <string name="serii">Serie</string>
+    <string name="powt_rze">Ilość</string>
+    <string name="usu">Usuń</string>
+    <string name="lastAdded">Ostatnio dodane</string>
+    <string name="calories">Kalorie</string>
+    <string name="favourites">Ulubione</string>
+    <string name="addMeal">Dodaj posiłek</string>
+    <string name="createMeal">Stwórz posiłek</string>
+    <string name="save">zapisz</string>
+    <string name="lunch">Lunch</string>
+    <string name="portion_info">(porcja)</string>
+    <string name="meal_name">Posiłek</string>
+    <string name="nameMeal">Nazwij posiłek</string>
+    <string name="add">Dodaj</string>
+    <string name="creatine">Kreatyna</string>
+    <string name="bcaa">Bcaa</string>
+    <string name="zma">ZMA</string>
+    <string name="creatineDesc">Suplement wspomagający wzrost masy mięśniowej. Jego skuteczność jak i bezpieczeństwo potwierdza wiele badań.</string>
+    <string name="bcaaDesc">Suplement, który wzmacnia wytrzymałość tkanki mięśniowej oraz hamuje jej rozkład. Jego efekty zostały potwierdzone przez wiele badań.</string>
+    <string name="zmaDesc">Suplement składający się z magnezu, cynku oraz witaminy B6, używa go się przeważnie do ochrony organizmu przed intensywnym wysiłkiem.</string>
+    <string name="eggs">Jajka</string>
+    <string name="chickenFilet">Filet z kurczaka</string>
+    <string name="oats">Owsianka</string>
+    <string name="protein_bar">Batonik proteinowy</string>
+</resources>

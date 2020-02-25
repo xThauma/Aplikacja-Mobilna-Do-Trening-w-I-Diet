@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/gymTable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gym_place"
+        android:background="@drawable/custom_border_no_top_line"
+        android:weightSum="20">
+
+        <TextView
+            android:id="@+id/name_of_exerciseTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="8"
+            android:background="@drawable/custom_border_only_right_line"
+            android:gravity="center"
+            android:text="@string/nazwa_wiczenia"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/training_contentTVNoS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_only_right_line"
+            android:gravity="center"
+            android:text="@string/serii"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/training_contentTVNoP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/custom_border_only_right_line"
+            android:gravity="center"
+            android:text="Ilość"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:id="@+id/delete_trainingBTN"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@null"
+            android:src="@drawable/ic_trash"
+            android:text="@string/usu"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

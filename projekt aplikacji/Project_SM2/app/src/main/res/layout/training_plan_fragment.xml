@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.Fragment">
+
+    <Button
+        android:id="@+id/add_trainingBTN"
+        style="@style/ButtonTheme2"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom_border"
+        android:text="@string/add_a_training" />
+
+    <LinearLayout
+        android:id="@+id/training_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_size"
+        android:layout_below="@+id/add_trainingBTN"
+        android:background="@drawable/custom_border_no_top_line"
+        android:gravity="center"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/changeDateBTNleftTraining"
+            style="@style/ButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_border_only_right_line"
+            android:text="@string/left" />
+
+        <Button
+            android:id="@+id/changeDateBTNTraining"
+            style="@style/ButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_weight="6"
+            android:background="@drawable/custom_border_only_right_line"
+            android:text="@string/dateState" />
+
+        <Button
+            android:id="@+id/changeDateBTNrightTraining"
+            style="@style/ButtonTheme2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/right" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gym_place"
+        style="@style/ButtonTheme2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/training_ll1"
+        android:background="@drawable/custom_border_no_top_line"
+        android:text="@string/add_gym" />
+
+    <LinearLayout
+        android:id="@+id/gymTable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gym_place"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_border"
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_only_right_line"
+            android:text="Nazwa ćwiczenia"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_only_right_line"
+            android:text="Serie"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_border_only_right_line"
+            android:layout_weight="4"
+            android:text="Ilość"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_weight="4"
+            android:text="Usuń"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/training_planRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gymTable1"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

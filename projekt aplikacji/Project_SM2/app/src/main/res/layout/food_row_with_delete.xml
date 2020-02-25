@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:id="@+id/likeFoodBTN"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:src="@drawable/ic_favorite_border_black"
+                android:text="@string/del_short"
+                android:background="@drawable/custom_border_no_top_line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:id="@+id/foodNameTV"
+                android:gravity="center"
+                android:text="Name"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:id="@+id/foodContentCalories"
+                android:text="kcals"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/foodContentProteins"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/proteins_short"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/foodContentCarbs"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/carbs_short"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/foodContentFats"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="@string/fats_short"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="19dp"
+                android:id="@+id/deleteFoodBTN"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:src="@drawable/ic_trash"
+                android:text="@string/del_short"
+                android:background="@drawable/custom_border_no_top_and_left_line" />
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

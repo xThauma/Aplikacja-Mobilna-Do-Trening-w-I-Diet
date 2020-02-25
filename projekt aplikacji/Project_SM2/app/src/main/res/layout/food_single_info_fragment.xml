@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+    <RelativeLayout
+        android:id="@+id/rlSingleInfoRL"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/user_infoOnTopRL"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/appMainColor"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@color/ap_gray" />
+
+            <EditText
+                android:id="@+id/portionSingleInfoET"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/nameSingleFoodTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/mainTextColor"
+                android:textSize="@dimen/text_size_username"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="99dp"
+                android:gravity="center"
+                android:text="@string/portion_info"
+                android:textColor="@color/mainTextColor"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/AppTheme.LayoutPadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/user_infoOnTopRL">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/food_infoRV2"
+                style="@style/AppTheme.Padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

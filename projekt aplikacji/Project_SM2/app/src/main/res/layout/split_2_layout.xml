@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme.LayoutPadding">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/register2rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sex"
+                    android:textSize="25dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/rbGroupSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:checkedButton="@+id/maleRB"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/femaleRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female" />
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/register2rl1"
+                android:id="@+id/register2rl2"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/registerHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/heightET"
+                    android:layout_width="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/register2rl3"
+                android:layout_below="@+id/register2rl2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textSize="25dp" />
+
+
+                <EditText
+                    android:id="@+id/weightET"
+                    android:layout_width="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/register2rl4"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/register2rl3"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/split2_target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/target_weight"
+                    android:textSize="25dp" />
+
+
+                <EditText
+                    android:id="@+id/targetWeightET"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:inputType="numberDecimal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/register2rl4"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight_lose_per_week"
+                    android:textSize="25dp" />
+
+                <RadioGroup
+                    android:id="@+id/rbGroupLoseWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:checkedButton="@+id/quarterRB"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/zeroRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 kg" />
+
+                    <RadioButton
+                        android:id="@+id/quarterRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.25 kg" />
+
+                    <RadioButton
+                        android:id="@+id/halfRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.5 kg" />
+
+                    <RadioButton
+                        android:id="@+id/halfAndQuarterRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.75 kg" />
+
+                    <RadioButton
+                        android:id="@+id/oneRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 kg" />
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>

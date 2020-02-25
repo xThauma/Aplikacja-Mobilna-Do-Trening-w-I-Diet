@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/comment_background"
+    android:stateListAnimator="@animator/comment_selection">
+
+    <LinearLayout
+        android:id="@+id/food_info_row_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="67">
+
+        <TextView
+            android:id="@+id/startTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_weight="39"
+            android:paddingStart="5dp"
+            android:text="title"
+            android:textColor="@color/mainTextColor"
+            android:textSize="@dimen/text_size_food" />
+
+        <TextView
+            android:id="@+id/endTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="28"
+            android:gravity="right"
+            android:textAlignment="gravity"
+            android:text="content"
+            android:textColor="@color/mainTextColor"
+            android:textSize="@dimen/text_size_food"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lljakisnatest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_info_row_ll"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+
+</RelativeLayout>
